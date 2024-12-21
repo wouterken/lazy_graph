@@ -1,0 +1,81 @@
+Style/EvalWithLocation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node/derived_rules.rb
+    - lib/lazy_graph/hash_utils.rb
+
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node/derived_rules.rb
+    - lib/lazy_graph/hash_utils.rb
+
+Metrics/AbcSize:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+    - lib/lazy_graph/context.rb
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node/derived_rules.rb
+    - lib/lazy_graph/hash_utils.rb
+
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/*
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/context.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node/derived_rules.rb
+
+Metrics/ModuleLength:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node/derived_rules.rb
+
+Metrics/ClassLength:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/path_parser*
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder.rb
+    - lib/lazy_graph/builder/dsl.rb
+
+Metrics/ParameterLists:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder/dsl.rb
+
+Style/OptionalArguments:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
+    - lib/lazy_graph/builder/dsl.rb
+
+Naming/MethodName:
+  Enabled: true
+  Exclude:
+    - lib/lazy_graph/node.rb
